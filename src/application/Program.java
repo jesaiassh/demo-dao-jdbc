@@ -1,12 +1,19 @@
 package application;
 
-import model.entities.Departament;
+
+
+import java.util.Date;
+
+import model.entities.Department;
+import model.entities.Seller;
 
 public class Program {
 
 	public static void main(String[] args) {
-		Departament obj = new Departament(1, " Book");
-		System.out.println(obj);
+		Department obj = new Department(1, " Book");
+		
+		Seller seller = new  Seller(1, " Marcus", "marcus@gmail.com:", new Date(), 3000.0, obj);
+		System.out.println(seller);
 
 	}
 
