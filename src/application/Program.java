@@ -51,7 +51,17 @@ Scanner sc = new Scanner(System.in);
 		seller.setName("Agnalgo Raiol");
 		sellerDao.update(seller);
 		System.out.println("Update Completed");
+		
+		
+		
+		System.out.println("\n=== TEST : seller Delete =====");
+		System.out.println(" Enter Id for delete test");
+		int id = sc.nextInt();
+		sellerDao.deleteById(id);
+		System.out.println("Delete completed");
+
 		sc.close();
+
 		}
 
 	}
