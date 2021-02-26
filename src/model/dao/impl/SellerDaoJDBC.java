@@ -94,7 +94,7 @@ public class SellerDaoJDBC implements SellerDao {
 		
 	}
 
-	//Delatar
+	//Delatar por id
 	@Override
 	public void deleteById(Integer id) {
 		
@@ -106,16 +106,14 @@ public class SellerDaoJDBC implements SellerDao {
 			st.executeUpdate();
 			
 			/*int rows = st.executeUpdate();
-			 
 			if(rows!= 0) {
-				
-				System.out.println("Usuário deletado");
+			System.out.println("Usuário deletado");
 			}
 			if( rows == 0) {
-				System.out.println("Usuario inexistente");
-			
+			System.out.println("Usuario inexistente");
 		}
 		*/
+			
 		}
 		catch(SQLException e) {
 			throw new DbException(e.getMessage());

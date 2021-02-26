@@ -37,13 +37,13 @@ Scanner sc = new Scanner(System.in);
 			System.out.println(obj);
 		}
 
-		/*
+		
 		System.out.println("\n=== TEST 4: seller insert =====");
 		Seller newSeller = new Seller(null,"Anabelle","a@gmail.com",new Date(),2000.0,department);
 		sellerDao.insert(newSeller);
 		System.out.println("Inserted! New id = " + newSeller.getId());
 		
-		*/
+		
 		
 
 		System.out.println("\n=== TEST 5: seller update =====");
@@ -54,7 +54,7 @@ Scanner sc = new Scanner(System.in);
 		
 		
 		
-		System.out.println("\n=== TEST : seller Delete =====");
+		System.out.println("\n=== TEST 6 : seller Delete =====");
 		System.out.println(" Enter Id for delete test");
 		int id = sc.nextInt();
 		sellerDao.deleteById(id);
